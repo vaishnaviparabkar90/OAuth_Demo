@@ -40,8 +40,8 @@ const User = mongoose.model('User', UserSchema);
 
 // Passport Google Strategy
 passport.use(new GoogleStrategy({
-  clientID: '500407920444-n8vrc4mtaoe9u3tn5def7au8kqhd8nv1.apps.googleusercontent.com',
-  clientSecret: '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',
+  clientID: 'your-clientID',
+  clientSecret: 'your-clientScreate',
   callbackURL: 'http://localhost:5000/auth/google/callback'
 }, async (accessToken, refreshToken, profile, done) => {
   try {
